@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "evolutionofthetimes",
+    "name": "EvolutionofTheTimes",
+    "description": "模组:Evolution of the times(时代进化)为国人团队TheCinfinite创作,其主要作者 chenjj100419 \nModule: evolution of the times (evolution of the times) was created by the cinfinite team of Chinese people. Its main author is Chen jj100419 \nモジュール：Evolution of the times（時代進化）は国人チームThe Cinfiniteのために創作されました。その主な作者：chenj 100419",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://thecinfiniteteam.github.io/",
+    "updateUrl": "https://thecinfiniteteam.gtihub.io/src/mod/eot/update.json",
+    "authorList": [
+      "TheCinfiniteTeam"
+    ],
+    "credits": "",
+    "logoFile": "assets/evolutionofthetimes/textures/gui/logo.png",
+    "screenshots": ["assets/evolutionofthetimes/textures/gui/sword.png"],
+    "dependencies": []
+  }
+]
