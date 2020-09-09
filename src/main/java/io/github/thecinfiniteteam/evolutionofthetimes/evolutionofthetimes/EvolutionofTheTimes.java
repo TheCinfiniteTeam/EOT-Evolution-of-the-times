@@ -1,5 +1,7 @@
 package io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes;
 
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockHandler;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
@@ -34,7 +36,7 @@ public class EvolutionofTheTimes {
      */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-
+        new BlockHandler(); new BlockRegistry();
     }
 
     /**
