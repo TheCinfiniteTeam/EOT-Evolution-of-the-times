@@ -1,9 +1,9 @@
 {
   "variants":{
-    "normal": { "model": "evolutionofthetimes:terminal" },
     "facing=north": { "model": "evolutionofthetimes:terminal" },
     "facing=south": { "model": "evolutionofthetimes:terminal_south"},
     "facing=west": { "model": "evolutionofthetimes:terminal_west" },
-    "facing=east": { "model": "evolutionofthetimes:terminal_east" }
+    "facing=east": { "model": "evolutionofthetimes:terminal_east" },
+    "facing=up": { "model": "evolutionofthetimes:terminal_up" }
   }
 }

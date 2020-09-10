@@ -14,6 +14,6 @@ public class BlockRegistry {
             event.getRegistry().register(BlockHandler.blocks.get(i));
         }
         */
-        event.getRegistry().registerAll(BlockHandler.blocks.toArray(new Block[0]));
+        event.getRegistry().registerAll(BlockHandler.blocks.toArray(new Block[0])); //    "normal": { "model": "evolutionofthetimes:terminal" },
     }
 }

@@ -3,7 +3,9 @@ package io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockHandler;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -113,4 +115,7 @@ public class EvolutionofTheTimes {
 
     }
     */
+    public void registerItemRenderer(Item item, int meta, String id){
+        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
+    }
 }
