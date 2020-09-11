@@ -1,0 +1,30 @@
+{
+  "machine_placement_sound": {
+    "category": "block",
+    "subtitle": "evolutionofthetimes.sound.machine_placement_sound",
+    "sounds": [
+      "evolutionofthetimes:music/md_a"
+    ]
+  },
+  "machine_break_sound": {
+    "category": "block",
+    "subtitle": "evolutionofthetimes.sound.machine_break_sound",
+    "sounds": [
+      "evolutionofthetimes:music/md_b"
+    ]
+  },
+  "machine_fall_sound": {
+    "category": "block",
+    "subtitle": "evolutionofthetimes.sound.machine_fall_sound",
+    "sounds": [
+      "evolutionofthetimes:music/md_f"
+    ]
+  },
+  "machine_hit_sound": {
+    "category": "block",
+    "subtitle": "evolutionofthetimes.sound.machine_hit_sound",
+    "sounds": [
+      "evolutionofthetimes:music/md_h"
+    ]
+  }
+}

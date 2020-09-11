@@ -4,6 +4,16 @@
     "facing=south": { "model": "evolutionofthetimes:terminal_south"},
     "facing=west": { "model": "evolutionofthetimes:terminal_west" },
     "facing=east": { "model": "evolutionofthetimes:terminal_east" },
-    "facing=up": { "model": "evolutionofthetimes:terminal_up" }
+    "facing=up": { "model": "evolutionofthetimes:terminal_up" },
+    "facing=north,run=false": { "model": "evolutionofthetimes:terminal" },
+    "facing=south,run=false": { "model": "evolutionofthetimes:terminal_south"},
+    "facing=west,run=false": { "model": "evolutionofthetimes:terminal_west" },
+    "facing=east,run=false": { "model": "evolutionofthetimes:terminal_east" },
+    "facing=up,run=false": { "model": "evolutionofthetimes:terminal_up" },
+    "facing=north,run=true": { "model": "evolutionofthetimes:terminal_true" },
+    "facing=south,run=true": { "model": "evolutionofthetimes:terminal_south_true"},
+    "facing=west,run=true": { "model": "evolutionofthetimes:terminal_west_true" },
+    "facing=east,run=true": { "model": "evolutionofthetimes:terminal_east_true" },
+    "facing=up,run=true": { "model": "evolutionofthetimes:terminal_up_true" }
   }
 }

@@ -2,6 +2,8 @@ package io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes;
 
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockHandler;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockRegistry;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.Sound;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.SoundRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -18,7 +20,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
         modid = EvolutionofTheTimes.MOD_ID,
         name = EvolutionofTheTimes.MOD_NAME,
         version = EvolutionofTheTimes.VERSION,
-        updateJSON = "https://thecinfiniteteam.gtihub.io/src/mod/eot/update.json/"
+        updateJSON = "https://thecinfiniteteam.gtihub.io/src/mod/eot/update.json/",
+        guiFactory = "io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.config.configGuiHub"
 )
 public class EvolutionofTheTimes {
 
@@ -39,6 +42,7 @@ public class EvolutionofTheTimes {
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
         new BlockHandler(); new BlockRegistry();
+        new Sound(); new SoundRegistry();
     }
 
     /**

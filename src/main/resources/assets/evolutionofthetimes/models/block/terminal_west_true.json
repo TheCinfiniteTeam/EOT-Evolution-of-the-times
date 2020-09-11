@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "evolutionofthetimes:block/shell",
+    "down": "evolutionofthetimes:block/shell_true_",
+    "up": "evolutionofthetimes:block/shell_true_",
+    "north": "evolutionofthetimes:block/shell_true_",
+    "south": "evolutionofthetimes:block/shell_true_",
+    "west": "evolutionofthetimes:block/terminal_1",
+    "east": "evolutionofthetimes:block/shell"
+  }
+}

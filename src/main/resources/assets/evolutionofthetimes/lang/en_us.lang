@@ -1,0 +1,16 @@
+tile.evolutionofthetimes.terminal.name=Terminal
+tile.evolutionofthetimes.ender_chunkloader.name=[§1§l§n§oEnder§f]ChunkLoader§kChunk
+
+title.evolutionofthetimes.terminal.click.msg.name=§6OpenTerminal ing...
+
+evolutionofthetimes.sound.machine_placement_sound=Machine placement
+evolutionofthetimes.sound.machine_break_sound=Machine break
+evolutionofthetimes.sound.machine_fall_sound=Player fall to machine
+evolutionofthetimes.sound.machine_hit_sound=Hit
+
+itemGroup.evoluionofthetimes.industry=§9EvolutionOfTheTimes §6IndustryTimes
+
+config.evolutionofthetimes=§9EvolutionOfTheTimes Config
+
+config.evolutionofthetimes.terminal_rf_storage_capacity=RF storage capacity of terminal
+g.evolutionofthetimes.mod_use_energy_units=Mod Use Energy Units

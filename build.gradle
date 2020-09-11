@@ -55,3 +55,6 @@ processResources {
         exclude "mcmod.info"
     }
 }
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

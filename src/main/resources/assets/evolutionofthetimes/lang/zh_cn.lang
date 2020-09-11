@@ -1,1 +1,18 @@
 tile.evolutionofthetimes.terminal.name=终端
+#tile.evolutionofthetimes.terminal.name=\u7EC8\u7AEF
+tile.evolutionofthetimes.ender_chunkloader.name=[§1§l§n§o末影§f]区块加载器§kChunk
+
+title.evolutionofthetimes.terminal.click.msg.name=§6打开终端中ing...
+#title.evolutionofthetimes.terminal.click.msg.name=\u00A76\u6253\u5F00\u7EC8\u7AEF\u4E2Ding...
+
+evolutionofthetimes.sound.machine_placement_sound=机器放置
+evolutionofthetimes.sound.machine_break_sound=机器破坏
+evolutionofthetimes.sound.machine_fall_sound=玩家跌落到机器
+evolutionofthetimes.sound.machine_hit_sound=Hit
+
+itemGroup.evolutionofthetimes.industry=§9时代进化 §6工业时代
+
+config.evolutionofthetimes=§9时代进化 配置
+
+config.evolutionofthetimes.terminal_rf_storage_capacity=终端RF存储容量
+config.evolutionofthetimes.mod_use_energy_units=模组使用的能量单位
