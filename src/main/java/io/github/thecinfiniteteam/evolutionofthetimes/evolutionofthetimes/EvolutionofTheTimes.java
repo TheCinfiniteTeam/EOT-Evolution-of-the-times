@@ -2,6 +2,7 @@ package io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes;
 
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockHandler;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockRegistry;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.potion.PotionRegistry;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.Sound;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.SoundRegistry;
 import net.minecraft.block.Block;
@@ -43,6 +44,7 @@ public class EvolutionofTheTimes {
     public void preinit(FMLPreInitializationEvent event) {
         new BlockHandler(); new BlockRegistry();
         new Sound(); new SoundRegistry();
+        new PotionRegistry();
     }
 
     /**

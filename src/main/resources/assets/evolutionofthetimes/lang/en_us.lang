@@ -1,13 +1,18 @@
 tile.evolutionofthetimes.terminal.name=Terminal
 tile.evolutionofthetimes.ender_chunkloader.name=[§1§l§n§oEnder§f]ChunkLoader§kChunk
+tile.evolutionofthetimes.small_stone.name=CubaSmallStone
 
 title.evolutionofthetimes.terminal.click.msg.name=§6OpenTerminal ing...
+
+item.evolutionofthetimes.gravel.name=SmallStone
 
 evolutionofthetimes.sound.machine_placement_sound=Machine placement
 evolutionofthetimes.sound.machine_break_sound=Machine break
 evolutionofthetimes.sound.machine_fall_sound=Player fall to machine
 evolutionofthetimes.sound.machine_hit_sound=Hit
 
+itemGroup.evolutionofthetimes.original=§9EvolutionOfTheTimes §eOriginalTims
+itemGroup.evolutionofthetimes.melting=§9EvolutionOfTheTimes §4MeltingTimes
 itemGroup.evoluionofthetimes.industry=§9EvolutionOfTheTimes §6IndustryTimes
 
 config.evolutionofthetimes=§9EvolutionOfTheTimes Config

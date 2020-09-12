@@ -10,4 +10,5 @@ public class BlockHandler {
 
     public static final Block blockTerminal = new BlockTerminal();
     public static final Block blockEnderChunkLoader = new BlockEnderChunkLoader();
+    public static final Block blockSmallStone = new BlockSmallStone();
 }
