@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "evolutionofthetimes:original_crafting",
+  "result": { "item": "minecraft:cobblestone", "count": 2 },
+  "ingredients": [
+    { "item": "evolutionofthetimes:gravel", "data": 0 },
+    { "item": "evolutionofthetimes:gravel", "data": 0 },
+    { "item": "evolutionofthetimes:gravel", "data": 0 },
+    { "item": "evolutionofthetimes:gravel", "data": 0 }
+  ]
+}
