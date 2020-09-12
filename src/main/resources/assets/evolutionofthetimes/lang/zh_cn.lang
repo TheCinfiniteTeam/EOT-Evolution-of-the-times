@@ -2,11 +2,14 @@ tile.evolutionofthetimes.terminal.name=终端
 #tile.evolutionofthetimes.terminal.name=\u7EC8\u7AEF
 tile.evolutionofthetimes.ender_chunkloader.name=[§1§l§n§o末影§f]区块加载器§kChunk
 tile.evolutionofthetimes.small_stone.name=块状石子
+tile.evolutionofthetimes.core_framework.name=核心框架
 
 title.evolutionofthetimes.terminal.click.msg.name=§6打开终端中ing...
 #title.evolutionofthetimes.terminal.click.msg.name=\u00A76\u6253\u5F00\u7EC8\u7AEF\u4E2Ding...
 
 item.evolutionofthetimes.gravel.name=石子
+item.evolutionofthetimes.rough_stick.name=粗制木棍
+item.evolutionofthetimes.stone_knife.name=石头小刀
 
 evolutionofthetimes.sound.machine_placement_sound=机器放置
 evolutionofthetimes.sound.machine_break_sound=机器破坏
@@ -21,3 +24,14 @@ config.evolutionofthetimes=§9时代进化 配置
 
 config.evolutionofthetimes.terminal_rf_storage_capacity=终端RF存储容量
 config.evolutionofthetimes.mod_use_energy_units=模组使用的能量单位
+
+advancement.evolutionofthetimes.o.root.title=时代进化 - 阶段一:原始时代!!
+advancement.evolutionofthetimes.o.root.description=§6开始你的进化之旅吧!
+advancement.evolutionofthetimes.o.getgravel.title=获得石子!
+advancement.evolutionofthetimes.o.getgravel.description=获得到地上生成的石子
+advancement.evolutionofthetimes.o.getstring.title=String?字符串?不它是线啊!
+advancement.evolutionofthetimes.o.getstring.description=§6有线可以创造无限!
+advancement.evolutionofthetimes.o.getrough_stick.title=粗糙的木棍!
+advancement.evolutionofthetimes.o.getrough_stick.description=好粗糙的木棍啊!
+advancement.evolutionofthetimes.o.originaltimesover.title=原始时代结束!
+advancement.evolutionofthetimes.o.originaltimesover.description=原始时代结束啦~

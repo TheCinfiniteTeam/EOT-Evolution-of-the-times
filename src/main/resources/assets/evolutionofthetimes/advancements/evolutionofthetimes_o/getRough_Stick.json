@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": { "item": "evolutionofthetimes:rough_stick" },
+    "title": { "translate": "advancement.evolutionofthetimes.o.getrough_stick.title" },
+    "frame": "task",
+    "description": { "translate": "advancement.evolutionofthetimes.o.getrough_stick.description" }
+  },
+  "parent": "evolutionofthetimes:evolutionofthetimes_main/getString",
+  "criteria": {
+    "gravel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {"item": "evolutionofthetimes:rough_stick"}
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "recipes": ["evolutionofthetimes:crafting_rough_stick","evolutionofthetimes:crafting_stone_knife"]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "forge:ore_shaped",
+  "group": "evolutionofthetimes:industry_crafting",
+  "result": { "item": "evolutionofthetimes:core_framework" },
+  "pattern": [
+    "IRI",
+    "RGR",
+    "IRI"
+  ],
+  "key": {
+    "I": { "type": "minecraft:item", "item": "minecraft:iron_bars" },
+    "R": { "type": "forge:ore_dict", "ore": "ingotIron" },
+    "G": { "type": "minecraft:item", "item": "minecraft:glass" }
+  }
+}

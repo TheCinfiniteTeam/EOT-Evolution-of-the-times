@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "evolutionofthetimes:original_crafting",
+  "result": { "item": "evolutionofthetimes:rough_stick", "count": 1 },
+  "ingredients": [
+    { "item": "minecraft:string", "data": 0 },
+    { "item": "minecraft:stick", "data": 0 },
+    { "item": "minecraft:stick", "data": 0 }
+  ]
+}

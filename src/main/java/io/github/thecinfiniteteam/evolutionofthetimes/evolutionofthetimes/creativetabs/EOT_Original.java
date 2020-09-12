@@ -2,6 +2,7 @@ package io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.creat
 
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.EvolutionofTheTimes;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockHandler;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.item.ItemHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -11,6 +12,6 @@ public class EOT_Original extends CreativeTabs {
         super(EvolutionofTheTimes.MOD_ID+".original");
     }
     public ItemStack createIcon(){
-        return new ItemStack(Items.WOODEN_PICKAXE);
+        return new ItemStack(ItemHandler.itemRoughStick);
     }
 }

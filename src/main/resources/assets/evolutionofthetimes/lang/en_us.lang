@@ -1,10 +1,13 @@
 tile.evolutionofthetimes.terminal.name=Terminal
 tile.evolutionofthetimes.ender_chunkloader.name=[§1§l§n§oEnder§f]ChunkLoader§kChunk
 tile.evolutionofthetimes.small_stone.name=CubaSmallStone
+tile.evolutionofthetimes.core_framework.name=Core framework
 
 title.evolutionofthetimes.terminal.click.msg.name=§6OpenTerminal ing...
 
 item.evolutionofthetimes.gravel.name=SmallStone
+item.evolutionofthetimes.rough_stick.name=RoughStick
+item.evolutionofthetimes.stone_knife.name=Stone Knife
 
 evolutionofthetimes.sound.machine_placement_sound=Machine placement
 evolutionofthetimes.sound.machine_break_sound=Machine break
@@ -19,3 +22,14 @@ config.evolutionofthetimes=§9EvolutionOfTheTimes Config
 
 config.evolutionofthetimes.terminal_rf_storage_capacity=RF storage capacity of terminal
 g.evolutionofthetimes.mod_use_energy_units=Mod Use Energy Units
+
+advancement.evolutionofthetimes.o.root.title=§aEvolutionOfTheTimes - Original Times!
+advancement.evolutionofthetimes.o.root.description=§6Start your evolutionary journey!
+advancement.evolutionofthetimes.o.getgravel.title=§7Get Gravel!
+advancement.evolutionofthetimes.o.getgravel.description=Get For on Dict's Gravel
+advancement.evolutionofthetimes.o.getstring.title=§fString? String? No, it's a line!
+advancement.evolutionofthetimes.o.getstring.description=§6Wired can create infinite!
+advancement.evolutionofthetimes.o.getrough_stick.title=Rough stick!
+advancement.evolutionofthetimes.o.getrough_stick.description=Is Very Rough 's Stick!
+advancement.evolutionofthetimes.o.originaltimesover.title=Original Tiems Over!
+advancement.evolutionofthetimes.o.originaltimesover.description=Original Tiems is to Over~

@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "evolutionofthetimes:terminal"
+    },
+    "title":{ "translate": "advancement.evolutionofthetimes.o.root.title" },
+    "description":{ "translate": "advancement.evolutionofthetimes.o.root.description" },
+    "frame": "task",
+    "background": "evolutionofthetimes:textures/gui/advancements/backgrounds/shell.png"
+  },
+  "criteria": {
+    "description": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:string" },
+    "title": { "translate": "advancement.evolutionofthetimes.o.getstring.title" },
+    "frame": "task",
+    "description": { "translate": "advancement.evolutionofthetimes.o.getstring.description" }
+  },
+  "parent": "evolutionofthetimes:evolutionofthetimes_main/getGravel",
+  "criteria": {
+    "gravel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {"item": "minecraft:string"}
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "recipes": ["evolutionofthetimes:crafting_rough_stick"]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": { "item": "evolutionofthetimes:gravel" },
+    "title": { "translate": "advancement.evolutionofthetimes.0.getgravel.title" },
+    "frame": "task",
+    "description": { "translate": "advancement.evolutionofthetimes.o.getgravel.description" }
+  },
+  "parent": "evolutionofthetimes:evolutionofthetimes_main/root",
+  "criteria": {
+    "gravel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {"item": "evolutionofthetimes:gravel"}
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "recipes": ["evolutionofthetimes:crafting_cobblestone"]
+  }
+}

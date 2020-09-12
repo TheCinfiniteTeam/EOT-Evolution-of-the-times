@@ -20,5 +20,6 @@ public class BlockRegistry {
         GameRegistry.registerTileEntity(BlockTerminal.TerminalEntity.class, new ResourceLocation(EvolutionofTheTimes.MOD_ID,"terminal"));
 
         event.getRegistry().registerAll(BlockHandler.blocks.toArray(new Block[1]));
+        event.getRegistry().registerAll(BlockHandler.blocks.toArray(new Block[2]));
     }
 }
