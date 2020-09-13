@@ -22,13 +22,15 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
         name = EvolutionofTheTimes.MOD_NAME,
         version = EvolutionofTheTimes.VERSION,
         updateJSON = "https://thecinfiniteteam.gtihub.io/src/mod/eot/update.json/",
-        guiFactory = "io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.config.configGuiHub"
+        guiFactory = "io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.config.configGuiHub",
+        dependencies = "required-after:patchouli;"
 )
 public class EvolutionofTheTimes {
 
     public static final String MOD_ID = "evolutionofthetimes";
     public static final String MOD_NAME = "EvolutionofTheTimes";
     public static final String VERSION = "1.0.0";
+
 
     /**
      * This is the instance of your mod as created by Forge. It will never be null.
@@ -124,4 +126,12 @@ public class EvolutionofTheTimes {
     public void registerItemRenderer(Item item, int meta, String id){
         ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
     }
+    /*
+    @Mod.InstanceFactory
+    public static EvolutionofTheTimes getInstance()
+    {
+        return INSTANCE;
+    }
+    */
+
 }

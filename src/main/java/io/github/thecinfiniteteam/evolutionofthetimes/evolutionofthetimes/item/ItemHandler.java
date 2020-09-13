@@ -11,6 +11,8 @@ public class ItemHandler {
     public static final Item itemGravel = new ItemGravel();
     public static final Item itemRoughStick = new ItemRoughStick();
     public static final Item itemStoneKnife = new ItemStoneKnife();
+    public static final Item itemManual = new ItemManual();
+    public static final Item itemNukeBoomSword = new ItemNukeBoomSword();
     public interface IHasModel {
         public void registerModel();
     }

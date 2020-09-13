@@ -5,7 +5,7 @@
     "frame": "challenge",
     "description": { "translate": "advancement.evolutionofthetimes.o.originaltimesover.description" }
   },
-  "parent": "evolutionofthetimes:evolutionofthetimes_main/getRough_Stick",
+  "parent": "evolutionofthetimes:evolutionofthetimes_o/getRough_Stick",
   "criteria": {
     "gravel": {
       "trigger": "minecraft:inventory_changed",

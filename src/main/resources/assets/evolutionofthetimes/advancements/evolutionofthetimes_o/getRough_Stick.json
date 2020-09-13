@@ -5,7 +5,7 @@
     "frame": "task",
     "description": { "translate": "advancement.evolutionofthetimes.o.getrough_stick.description" }
   },
-  "parent": "evolutionofthetimes:evolutionofthetimes_main/getString",
+  "parent": "evolutionofthetimes:evolutionofthetimes_o/getString",
   "criteria": {
     "gravel": {
       "trigger": "minecraft:inventory_changed",

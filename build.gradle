@@ -55,6 +55,14 @@ processResources {
         exclude "mcmod.info"
     }
 }
+repositories {
+    maven { url 'https://maven.blamejared.com' }
+}
+
+dependencies {
+    // 1.12
+    compile "vazkii.patchouli:Patchouli:1.0-20"
+}
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }

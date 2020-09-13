@@ -19,6 +19,8 @@ public class ItemRegistry {
         event.getRegistry().registerAll(ItemHandler.items.toArray(new Item[3]));
         event.getRegistry().registerAll(ItemHandler.items.toArray(new Item[4]));
         event.getRegistry().registerAll(ItemHandler.items.toArray(new Item[5]));
+        event.getRegistry().registerAll(ItemHandler.items.toArray(new Item[6]));
+        event.getRegistry().registerAll(ItemHandler.items.toArray(new Item[7]));
     }
     @SubscribeEvent
     public static void onModelRegister(ModelRegistryEvent event){

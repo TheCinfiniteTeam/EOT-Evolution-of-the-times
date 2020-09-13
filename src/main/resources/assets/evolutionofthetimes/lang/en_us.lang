@@ -17,6 +17,7 @@ evolutionofthetimes.sound.machine_hit_sound=Hit
 itemGroup.evolutionofthetimes.original=§9EvolutionOfTheTimes §eOriginalTims
 itemGroup.evolutionofthetimes.melting=§9EvolutionOfTheTimes §4MeltingTimes
 itemGroup.evoluionofthetimes.industry=§9EvolutionOfTheTimes §6IndustryTimes
+itemGroup.evolutionofthetimes.eot=§9EvolutionOfTheTimes
 
 config.evolutionofthetimes=§9EvolutionOfTheTimes Config
 
@@ -33,3 +34,5 @@ advancement.evolutionofthetimes.o.getrough_stick.title=Rough stick!
 advancement.evolutionofthetimes.o.getrough_stick.description=Is Very Rough 's Stick!
 advancement.evolutionofthetimes.o.originaltimesover.title=Original Tiems Over!
 advancement.evolutionofthetimes.o.originaltimesover.description=Original Tiems is to Over~
+evolutionofthetimes.manual.name=EOT EvolutionOfTheTimes Manual
+evolutionofthetimes.manual.subtitle=This manual is the official Manual of EOT (evolution of the times)

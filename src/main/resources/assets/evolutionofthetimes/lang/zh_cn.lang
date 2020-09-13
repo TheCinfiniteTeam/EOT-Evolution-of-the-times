@@ -19,6 +19,7 @@ evolutionofthetimes.sound.machine_hit_sound=Hit
 itemGroup.evolutionofthetimes.original=§9时代进化 §e原始时代
 itemGroup.evolutionofthetimes.melting=§9时代进化 §4熔炼时代
 itemGroup.evolutionofthetimes.industry=§9时代进化 §6工业时代
+itemGroup.evolutionofthetimes.eot=§9时代进化
 
 config.evolutionofthetimes=§9时代进化 配置
 
@@ -35,3 +36,6 @@ advancement.evolutionofthetimes.o.getrough_stick.title=粗糙的木棍!
 advancement.evolutionofthetimes.o.getrough_stick.description=好粗糙的木棍啊!
 advancement.evolutionofthetimes.o.originaltimesover.title=原始时代结束!
 advancement.evolutionofthetimes.o.originaltimesover.description=原始时代结束啦~
+
+evolutionofthetimes.manual.name=EOT时代进化手册
+evolutionofthetimes.manual.subtitle=本手册为EOT(EvolutionOfTheTimes)的官方手册
