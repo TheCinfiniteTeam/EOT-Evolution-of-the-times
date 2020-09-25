@@ -26,10 +26,7 @@ public class ItemManual extends Item implements ItemHandler.IHasModel {
     }
     @Override
     public void registerModel(){
-        this.registerItemRenderer(this, 0, "inventory");
-    }
-    public void registerItemRenderer(Item item, int meta, String id){
-        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
+        EvolutionofTheTimes.proxy.registerItemRenderer(this, 0, "inventory");
     }
 /*
     @Override

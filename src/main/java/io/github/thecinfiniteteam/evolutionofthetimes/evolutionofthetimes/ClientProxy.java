@@ -2,6 +2,7 @@ package io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes;
 
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockHandler;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockRegistry;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.creativetabs.EOT_CreativeTabs;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.potion.PotionRegistry;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.Sound;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.SoundRegistry;
@@ -10,46 +11,21 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import org.apache.logging.log4j.Logger;
 
-@Mod(
-        modid = EvolutionofTheTimes.MOD_ID,
-        name = EvolutionofTheTimes.MOD_NAME,
-        version = EvolutionofTheTimes.VERSION,
-        acceptedMinecraftVersions = "1.12.2",
-        updateJSON = "https://thecinfiniteteam.gtihub.io/src/mod/eot/update.json/",
-        guiFactory = "io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.config.configGuiHub",
-        dependencies = "required-after:patchouli;"//required-client:optifine;"
-)
-public class EvolutionofTheTimes {
-
+public class ClientProxy extends CommonProxy{
     public static final String MOD_ID = "evolutionofthetimes";
     public static final String MOD_NAME = "EvolutionofTheTimes";
     public static final String VERSION = "1.0.0";
-    private static Logger logger;
 
-    /**
-     * This is the instance of your mod as created by Forge. It will never be null.
-     */
-    @Mod.Instance(MOD_ID)
-    public static EvolutionofTheTimes INSTANCE;
-
-    @SidedProxy(clientSide = "io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.ClientProxy", serverSide = "io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.CommonProxy")
-    public static CommonProxy proxy;
-    /**
-     * This is the first initialization event. Register tile entities here.
-     * The registry events below will have fired prior to entry to this method.
-     */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-         proxy.preinit(event);
+        super.preinit(event);
     }
 
     /**
@@ -57,7 +33,7 @@ public class EvolutionofTheTimes {
      */
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        proxy.init(event);
+        super.init(event);
     }
 
     /**
@@ -65,7 +41,7 @@ public class EvolutionofTheTimes {
      */
     @Mod.EventHandler
     public void postinit(FMLPostInitializationEvent event) {
-        proxy.postinit(event);
+        super.postinit(event);
     }
 
     /**
@@ -115,7 +91,6 @@ public class EvolutionofTheTimes {
            /*
              event.getRegistry().register(new MySpecialBlock().setRegistryName(MOD_ID, "mySpecialBlock"));
             */
-
         }
     }
     /* EXAMPLE ITEM AND BLOCK - you probably want these in separate files
@@ -127,14 +102,9 @@ public class EvolutionofTheTimes {
 
     }
     */
+    @Override
     public void registerItemRenderer(Item item, int meta, String id){
         ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
-    }
-    public static CommonProxy getProxy() {
-        return proxy;
-    }
-    public static Logger getLogger() {
-        return logger;
     }
     /*
     @Mod.InstanceFactory

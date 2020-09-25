@@ -5,6 +5,7 @@ import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.Evolut
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.creativetabs.EOT_CreativeTabs;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.item.ItemHandler;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.config.config;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.Sound;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
@@ -29,6 +30,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -42,7 +45,7 @@ public class BlockTerminal extends Block implements ItemHandler.IHasModel {
         this.setLightLevel(0f);
         this.setHardness(1.0f);
         this.setDefaultState(this.getBlockState().getBaseState().withProperty(FACING_BLOCK_SWITCH, EnumFacing.SOUTH));//.withProperty(RUN_BLOCK_SWITCH,false));
-        //this.setSoundType(Sound.machine_sound);
+        this.setSoundType(Sound.machine_sound);
         this.setCreativeTab(EOT_CreativeTabs.industry);
         BlockHandler.blocks.add(this);
         ItemHandler.items.add(new ItemBlock(this).setRegistryName(name));
@@ -72,11 +75,9 @@ public class BlockTerminal extends Block implements ItemHandler.IHasModel {
     }
     @Override
     public void registerModel(){
-        this.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+        EvolutionofTheTimes.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
-    public void registerItemRenderer(Item item, int meta, String id){
-        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
-    }
+    @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         tooltip.add("- \u00A76\u7EC8\u7AEF?");
         tooltip.add("- \u00A79\u53EF\u4EE5\u7528\u6765\u5728Mc\u91CC\u73A9Mc\u91CC\u73A9Mc\u91CC\u73A9...(\u7981\u6B62\u5957\u5A03)");

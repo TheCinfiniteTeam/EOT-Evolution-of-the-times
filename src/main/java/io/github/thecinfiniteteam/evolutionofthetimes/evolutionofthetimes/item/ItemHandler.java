@@ -13,6 +13,7 @@ public class ItemHandler {
     public static final Item itemStoneKnife = new ItemStoneKnife();
     public static final Item itemManual = new ItemManual();
     public static final Item itemNukeBoomSword = new ItemNukeBoomSword();
+    public static final Item itemBasketBall = new ItemBasketBall();
     public interface IHasModel {
         public void registerModel();
     }

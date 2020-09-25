@@ -4,12 +4,12 @@
   "edition":-1,
   "creative_tab":"evolutionofthetimes.eot",
   "dont_generate_book":false,
-  "show_progress":false,
+  "show_progress":true,
   "custom_book_item":"evolutionofthetimes:manual",
-  "book_texture":"patchouli:textures/gui/book_blue.png",
+  "book_texture":"patchouli:textures/gui/book_cyan.png",
   "advancement_namespaces": [
     "evolutionofthetimes"
   ],
   "pause_game": true,
-  "model": "patchouli:book_blue"
+  "model": "patchouli:book_cyan"
 }

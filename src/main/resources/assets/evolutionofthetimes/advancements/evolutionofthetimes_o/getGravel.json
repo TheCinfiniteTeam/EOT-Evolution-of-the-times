@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": { "item": "evolutionofthetimes:gravel" },
-    "title": { "translate": "advancement.evolutionofthetimes.0.getgravel.title" },
+    "title": { "translate": "advancement.evolutionofthetimes.o.getgravel.title" },
     "frame": "task",
     "description": { "translate": "advancement.evolutionofthetimes.o.getgravel.description" }
   },

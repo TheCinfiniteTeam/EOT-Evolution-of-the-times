@@ -8,11 +8,10 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class SoundRegistry {
+    public static final SoundEvent MACHINE_PLACEMENT_SOUND = new SoundEvent(new ResourceLocation(EvolutionofTheTimes.MOD_ID, "machine_placement_sound"));
+
     @SubscribeEvent
     public static void onSoundEvenrRegistration(RegistryEvent.Register<SoundEvent> event) {
-        event.getRegistry().register(Sound.MACHINE_PLACEMENT_SOUND.setRegistryName(new ResourceLocation(EvolutionofTheTimes.MOD_ID, "machine_placement_sound")));
-        event.getRegistry().register(Sound.MACHINE_BREAK_SOUND.setRegistryName(new ResourceLocation(EvolutionofTheTimes.MOD_ID, "machine_break_sound")));
-        event.getRegistry().register(Sound.MACHINE_FALL_SOUND.setRegistryName(new ResourceLocation(EvolutionofTheTimes.MOD_ID, "machine_fall_sound")));
-        event.getRegistry().register(Sound.MACHINE_HIT_SOUND.setRegistryName(new ResourceLocation(EvolutionofTheTimes.MOD_ID, "machine_hit_sound")));
+        event.getRegistry().register(MACHINE_PLACEMENT_SOUND.setRegistryName(new ResourceLocation(EvolutionofTheTimes.MOD_ID, "machine_placement_sound")));
     }
 }

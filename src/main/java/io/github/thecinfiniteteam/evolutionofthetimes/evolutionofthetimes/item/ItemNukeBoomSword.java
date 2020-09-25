@@ -35,16 +35,14 @@ public class ItemNukeBoomSword extends ItemSword implements ItemHandler.IHasMode
     public boolean isShield(ItemStack stack, @Nullable EntityLivingBase entity) {
         return false;
     }
+
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-        //Entity boom = new EntityEnderCrystal();
-        worldIn.getMinecraftServer().getEntityWorld().loadedEntityList.add(new EntityDragon(worldIn));
+        Entity boom = new EntityEnderCrystal(worldIn,hitX,hitY,hitZ);
+        worldIn.loadedEntityList.add(boom);
         return EnumActionResult.SUCCESS;
     }
     @Override
     public void registerModel(){
-        this.registerItemRenderer(this, 0, "inventory");
-    }
-    public void registerItemRenderer(Item item, int meta, String id){
-        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
+        EvolutionofTheTimes.proxy.registerItemRenderer(this, 0, "inventory");
     }
 }

@@ -24,9 +24,6 @@ public class BlockCoreFramework extends Block implements ItemHandler.IHasModel {
     }
     @Override
     public void registerModel(){
-        this.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-    }
-    public void registerItemRenderer(Item item, int meta, String id){
-        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
+        EvolutionofTheTimes.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 }
