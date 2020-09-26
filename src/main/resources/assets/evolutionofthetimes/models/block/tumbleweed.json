@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"particle": "evolutionofthetimes:block/tumbleweed",
+		"down": "evolutionofthetimes:block/tumbleweed",
+		"up": "evolutionofthetimes:block/tumbleweed",
+		"north": "evolutionofthetimes:block/tumbleweed",
+		"south": "evolutionofthetimes:block/tumbleweed",
+		"west": "evolutionofthetimes:block/tumbleweed",
+		"east": "evolutionofthetimes:block/tumbleweed"
+	}
+}

@@ -40,3 +40,5 @@ advancement.evolutionofthetimes.o.originaltimesover.description=原始时代结�
 
 evolutionofthetimes.manual.name=EOT时代进化手册
 evolutionofthetimes.manual.subtitle=本手册为EOT(EvolutionOfTheTimes)的官方手册
+
+commands.eot.usage=/eot []

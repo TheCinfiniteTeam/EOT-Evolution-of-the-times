@@ -17,13 +17,13 @@ evolutionofthetimes.sound.machine_hit_sound=Hit
 
 itemGroup.evolutionofthetimes.original=§9EvolutionOfTheTimes §eOriginalTims
 itemGroup.evolutionofthetimes.melting=§9EvolutionOfTheTimes §4MeltingTimes
-itemGroup.evoluionofthetimes.industry=§9EvolutionOfTheTimes §6IndustryTimes
+itemGroup.evolutionofthetimes.industry=§9EvolutionOfTheTimes §6IndustryTimes
 itemGroup.evolutionofthetimes.eot=§9EvolutionOfTheTimes
 
 config.evolutionofthetimes=§9EvolutionOfTheTimes Config
 
 config.evolutionofthetimes.terminal_rf_storage_capacity=RF storage capacity of terminal
-g.evolutionofthetimes.mod_use_energy_units=Mod Use Energy Units
+config.evolutionofthetimes.mod_use_energy_units=Mod Use Energy Units
 
 advancement.evolutionofthetimes.o.root.title=§aEvolutionOfTheTimes - Original Times!
 advancement.evolutionofthetimes.o.root.description=§6Start your evolutionary journey!
@@ -35,5 +35,8 @@ advancement.evolutionofthetimes.o.getrough_stick.title=Rough stick!
 advancement.evolutionofthetimes.o.getrough_stick.description=Is Very Rough 's Stick!
 advancement.evolutionofthetimes.o.originaltimesover.title=Original Tiems Over!
 advancement.evolutionofthetimes.o.originaltimesover.description=Original Tiems is to Over~
+
 evolutionofthetimes.manual.name=EOT EvolutionOfTheTimes Manual
 evolutionofthetimes.manual.subtitle=This manual is the official Manual of EOT (evolution of the times)
+
+commands.eot.usage=/eot []

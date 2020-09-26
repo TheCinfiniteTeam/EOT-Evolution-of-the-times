@@ -3,13 +3,17 @@ package io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.item;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.EvolutionofTheTimes;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.creativetabs.EOT_CreativeTabs;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.entity.EntityBasketBall;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.material.CXK;
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityMinecartTNT;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntitySnowball;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -19,9 +23,10 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class ItemBasketBall extends Item implements ItemHandler.IHasModel {
+public class ItemBasketBall extends ItemSword implements ItemHandler.IHasModel {
     private static final String name = "basket_ball";
     public ItemBasketBall(){
+        super(CXK.CXK_BALL);
         this.setTranslationKey(EvolutionofTheTimes.MOD_ID+"."+name);
         this.setCreativeTab(EOT_CreativeTabs.industry);
         this.setRegistryName(name);

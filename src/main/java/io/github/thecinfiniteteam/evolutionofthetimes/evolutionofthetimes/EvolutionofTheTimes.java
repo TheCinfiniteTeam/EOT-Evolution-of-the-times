@@ -1,10 +1,7 @@
 package io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes;
 
-import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockHandler;
-import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockRegistry;
-import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.potion.PotionRegistry;
-import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.Sound;
-import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.SoundRegistry;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.command.CommandRegistry;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.network.PacketTech;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -14,10 +11,15 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 import org.apache.logging.log4j.Logger;
+
 
 @Mod(
         modid = EvolutionofTheTimes.MOD_ID,
@@ -34,6 +36,7 @@ public class EvolutionofTheTimes {
     public static final String MOD_NAME = "EvolutionofTheTimes";
     public static final String VERSION = "1.0.0";
     private static Logger logger;
+    private SimpleNetworkWrapper network;
 
     /**
      * This is the instance of your mod as created by Forge. It will never be null.
@@ -49,7 +52,9 @@ public class EvolutionofTheTimes {
      */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-         proxy.preinit(event);
+        proxy.preinit(event);
+        network = NetworkRegistry.INSTANCE.newSimpleChannel(MOD_ID);
+        network.registerMessage(new PacketTech.Handler(), PacketTech.class, 1, Side.CLIENT);
     }
 
     /**
@@ -143,5 +148,10 @@ public class EvolutionofTheTimes {
         return INSTANCE;
     }
     */
-
+    public static SimpleNetworkWrapper getNetwork() {
+        return INSTANCE.network;
+    }
+    public void serverStarting(FMLServerStartingEvent event) {
+        proxy.serverStarting(event);
+    }
 }

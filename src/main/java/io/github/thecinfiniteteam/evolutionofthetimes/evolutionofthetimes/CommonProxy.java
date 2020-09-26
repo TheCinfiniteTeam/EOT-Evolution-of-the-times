@@ -2,6 +2,7 @@ package io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes;
 
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockHandler;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.block.BlockRegistry;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.command.CommandRegistry;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.creativetabs.EOT_CreativeTabs;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.gui.GUIHandler;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.potion.PotionRegistry;
@@ -16,6 +17,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -31,6 +33,7 @@ public class CommonProxy {
         new Sound(); new SoundRegistry();
         new PotionRegistry();
         new EOT_CreativeTabs();
+        new CommandRegistry();
     }
 
     /**
@@ -116,5 +119,8 @@ public class CommonProxy {
         return INSTANCE;
     }
     */
+    public void serverStarting(FMLServerStartingEvent event) {
+
+    }
 
 }
