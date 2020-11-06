@@ -6,7 +6,10 @@ import net.minecraft.init.SoundEvents;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 
-import static io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.SoundRegistry.MACHINE_PLACEMENT_SOUND;
+//import static io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.sound.SoundRegistry.MACHINE_PLACEMENT_SOUND;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.RegistryHandler.*;
+
+import static io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.RegistryHandler.MACHINE_PLACEMENT_SOUND;
 
 public class Sound {
     //public static final SoundEvent MACHINE_PLACEMENT_SOUND = new SoundEvent(new ResourceLocation(EvolutionofTheTimes.MOD_ID, "machine_placement_sound"));

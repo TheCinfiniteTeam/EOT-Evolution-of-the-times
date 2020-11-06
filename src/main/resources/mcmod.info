@@ -11,8 +11,8 @@
       "TheCinfiniteTeam"
     ],
     "credits": "",
-    "logoFile": "assets/evolutionofthetimes/textures/gui/logo.png",
-    "screenshots": ["assets/evolutionofthetimes/textures/gui/sword.png"],
+    "logoFile": "./assets/evolutionofthetimes/textures/gui/logo.png",
+    "screenshots": ["./assets/evolutionofthetimes/textures/gui/sword.png"],
     "dependencies": []
   }
 ]

@@ -3,8 +3,11 @@ package io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.item;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.EvolutionofTheTimes;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.creativetabs.EOT_CreativeTabs;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.entity.EntityBasketBall;
+import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.item.base.CXKBase;
 import io.github.thecinfiniteteam.evolutionofthetimes.evolutionofthetimes.material.CXK;
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityMinecartTNT;
@@ -23,14 +26,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class ItemBasketBall extends ItemSword implements ItemHandler.IHasModel {
+public class ItemBasketBall extends CXKBase implements ItemHandler.IHasModel {
     private static final String name = "basket_ball";
     public ItemBasketBall(){
-        super(CXK.CXK_BALL);
-        this.setTranslationKey(EvolutionofTheTimes.MOD_ID+"."+name);
+        super(name);
         this.setCreativeTab(EOT_CreativeTabs.industry);
-        this.setRegistryName(name);
-        ItemHandler.items.add(this);
+        //ItemHandler.items.add(this);
     }
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         ItemStack item = playerIn.getHeldItem(handIn);
@@ -43,6 +44,7 @@ public class ItemBasketBall extends ItemSword implements ItemHandler.IHasModel {
             //worldIn.spawnEntity(basketBall);
         }
         item.shrink(1);
+        playerIn.inventory.addItemStackToInventory(new ItemStack(this));
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, item);
     }
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
@@ -54,14 +56,18 @@ public class ItemBasketBall extends ItemSword implements ItemHandler.IHasModel {
             //worldIn.spawnEntity(snowball);
         }
         item.shrink(1);
+        player.inventory.addItemStackToInventory(new ItemStack(this));
         return EnumActionResult.SUCCESS;
     }
-    @SideOnly(Side.CLIENT)
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-        tooltip.add("\u00A76\u9E21\u4F60\u592A\u7F8E!~");
-    }
-    @Override
-    public void registerModel(){
-        EvolutionofTheTimes.proxy.registerItemRenderer(this, 0, "inventory");
+    public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
+        if (this.isInCreativeTab(tab)) {
+            items.add(new ItemStack(this));
+            ItemStack itemStack2 = new ItemStack(this);
+            itemStack2.addEnchantment(Enchantment.getEnchantmentByID(16),10);
+            itemStack2.addEnchantment(Enchantment.getEnchantmentByID(21),10);
+            //itemStack2.setCount(32767);
+            items.add(itemStack2);
+
+        }
     }
 }
